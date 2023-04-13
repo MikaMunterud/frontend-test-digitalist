@@ -1,0 +1,69 @@
+.searchBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+
+  &_box {
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: all 700ms ease-in-out;
+    width: 100%;
+    max-width: 500px;
+
+    @media only screen and (max-width: $media-XS) {
+      position: absolute;
+      z-index: 8;
+      bottom: 0;
+      right: 0;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(0);
+      max-width: none;
+      padding: 16px 0;
+      background-color: #000000df;
+    }
+    &.visible {
+      opacity: 1;
+
+      @media only screen and (max-width: $media-XS) {
+        visibility: visible;
+        transform: translateY(100%);
+      }
+    }
+
+    &_input {
+      opacity: 0;
+      transition: all 700ms ease-in-out;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      width: 0;
+      padding: 4px 0;
+      background-color: #5c5c5ca5;
+      backdrop-filter: blur(8px);
+      font-size: 1.1em;
+      color: $white;
+      @media only screen and (max-width: $media-XS) {
+        width: 75%;
+        padding: 4px 10px;
+      }
+      &.visible {
+        visibility: visible;
+        opacity: 1;
+        width: 75%;
+        padding: 4px 10px;
+      }
+    }
+  }
+
+  &_icon {
+    z-index: 12;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.4em;
+  }
+}

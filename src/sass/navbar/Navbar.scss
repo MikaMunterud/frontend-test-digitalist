@@ -1,0 +1,46 @@
+@import "../variables";
+@import "../mixin";
+@import "./MenuIcons.scss";
+@import "./MenuList.scss";
+@import "./SearchBox.scss";
+
+.fixedHeader {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+
+  & .relativeHeader {
+    @include darkBackgroundColor;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 32px;
+    color: $white;
+
+    @media only screen and (max-width: $media-XS) {
+      padding: 24px 16px;
+    }
+    & .companyLogo {
+      cursor: pointer;
+      @media only screen and (max-width: $media-XS) {
+        width: 150px;
+      }
+    }
+    & .navIcons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      gap: 16px;
+
+      &_menu {
+        display: flex;
+        flex-direction: row;
+        width: 36px;
+      }
+    }
+  }
+}
