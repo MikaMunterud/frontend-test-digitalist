@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixin";
+@import "./homepage/BackgroundImage.scss";
+@import "./homepage/PresentationBox.scss";
+@import "./homepage/Products.scss";
+@import "./homepage/Product.scss";
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+}

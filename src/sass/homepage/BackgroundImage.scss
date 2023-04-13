@@ -1,0 +1,41 @@
+.backgroundImage {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px #3232321a, 0px 2px #3232321a, 0px 3px #3232321a,
+    0px 4px #3232321a;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-image: url("https://icicathy.sirv.com/FrontEnd-test-Digitalist/small_meeting_Dollarphotoclub_86379057_0.jpg");
+  background-color: grey;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: $white;
+  @media only screen and (max-width: $media-XS) {
+    align-items: flex-end;
+    background-color: $white;
+  }
+
+  & .arrowDown {
+    position: absolute;
+    z-index: 3;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 2em;
+    color: $white;
+    &:hover {
+      bottom: 32px;
+    }
+    @media only screen and (max-width: $media-XS) {
+      display: none;
+    }
+  }
+}
