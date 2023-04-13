@@ -1,0 +1,35 @@
+@import "variables";
+
+@mixin darkBackgroundColor {
+  background-color: #000000a7;
+  @media only screen and (max-width: $media-XS) {
+    background-color: #000000d0;
+  }
+}
+
+@mixin darkerBackgroundColor {
+  background-color: #000000bc;
+  @media only screen and (max-width: $media-XS) {
+    background-color: #000000d4;
+  }
+}
+
+@mixin buttonEffect {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 14px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  @media only screen and (max-width: $media-XS) {
+    font-size: 1.2em;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: none;
+    border-bottom: none;
+  }
+}
