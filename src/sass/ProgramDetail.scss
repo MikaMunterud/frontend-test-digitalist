@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixin";
+
+.programDetail {
+  display: flex;
+  flex-direction: column;
+  padding: 128px 32px 64px;
+  align-items: center;
+  gap: 32px;
+  &_image {
+    width: 50%;
+  }
+  &_heading {
+    color: $grey;
+  }
+  &_description {
+    text-align: justify;
+    padding: 0 64px;
+    @media only screen and (max-width: $media-XS) {
+      padding: 0 32px;
+    }
+  }
+  &_link {
+    text-decoration: none;
+    background-color: $light-mint;
+    color: $white;
+    @include buttonEffect;
+  }
+}
