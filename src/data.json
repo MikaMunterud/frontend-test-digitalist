@@ -1,0 +1,44 @@
+{
+  "presentation": {
+    "heading": "Experts in co-creation",
+    "description": [
+      "Curabitur suscipit suscipit tellus.",
+      "Vivamus in erat ut urna cursus vestibulum.",
+      "Nulla consequat massa quis enim."
+    ]
+  },
+  "products": [
+    {
+      "name": "html5",
+      "image": "https://icicathy.sirv.com/FrontEnd-test-Digitalist/html-logo.svg",
+      "description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "css3",
+      "image": "https://icicathy.sirv.com/FrontEnd-test-Digitalist/css-logo.svg",
+      "description": "Cascading Style Sheets in a style sheet language used for describing the presentation of a document written in a markup language.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "js",
+      "image": "https://icicathy.sirv.com/FrontEnd-test-Digitalist/js-logo.svg",
+      "description": "JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    }
+  ],
+  "contactInfo": [
+    {
+      "name": "Portfolio",
+      "link": "https://mika-munterud-profile.vercel.app/"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/mikamunterud94/"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/MikaMunterud/frontend-test-digitalist"
+    }
+  ]
+}
