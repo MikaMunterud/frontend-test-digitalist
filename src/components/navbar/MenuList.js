@@ -40,7 +40,7 @@ export default function MenuList({ menuList, searchBox, hideMenu }) {
           icon={<SiLinkedin />}
         />
         <IconLink
-          link={"https://github.com/MikaMunterud"}
+          link={"https://github.com/MikaMunterud/frontend-test-digitalist"}
           linkText={"GitHub link"}
           icon={<ImGithub />}
         />
