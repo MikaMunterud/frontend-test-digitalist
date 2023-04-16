@@ -43,13 +43,23 @@
       outline: none;
       width: 0;
       padding: 4px 0;
-      background-color: #5c5c5ca5;
+      background-color: #818181a5;
       backdrop-filter: blur(8px);
       font-size: 1.1em;
       color: $white;
       @media only screen and (max-width: $media-XS) {
         width: 75%;
         padding: 4px 10px;
+      }
+      &::placeholder {
+        color: $white;
+      }
+      &:-ms-input-placeholder {
+        color: $white;
+      }
+
+      &::-ms-input-placeholder {
+        color: $white;
       }
       &.visible {
         visibility: visible;
